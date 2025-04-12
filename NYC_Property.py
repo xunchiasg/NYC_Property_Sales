@@ -3,7 +3,6 @@
 import streamlit as st
 import os
 
-
 # Title of st app
 st.title("NYC Property Data Analysis")
 st.write("Have you ever wondered how many properties are sold in NYC each year? Or the most popular neighborhoods amongst buyers?")
