@@ -23,7 +23,7 @@ For the purposes of data exploration, only data from a 24-month period of (2023-
 *This section provides an overview on the key steps undertaken to clean and import the data. For detailed steps, refer to 'NYC_Property_Notebook.ipynb'*
 
 The workflow diagram the key criteria and processes undertaken to allow for initial key findings for the provided data. As the DOF provides the yearly data seperated by boroughs, a data processing function was created to allow for data preparation at scale for past years. 
-![NYC_Property drawio (1)](https://github.com/user-attachments/assets/ad5f67c3-3872-4850-ba00-97f834ea778e)
+![NYC_Property drawio](https://github.com/user-attachments/assets/7f207283-ef0d-4196-8b16-ce68871585a1)
 
 ## Key Findings 
 - The percentage distribution of transactions between boroughs has remained relatively consistent between 2023 and 2024, with Queens, Brooklyn and Manhattan typically taking up about 80% of transactions. 
