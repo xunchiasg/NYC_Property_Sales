@@ -42,11 +42,6 @@ An aspect of the data provided also necessicated the record removal of what is k
 ![neighborhood_1](https://github.com/user-attachments/assets/bb0b0136-54e6-4e16-a904-af4dd6c22178)
 ![neighborood_2](https://github.com/user-attachments/assets/fcac198c-8ea8-47f7-9ff4-761fe1def57f)
 
-- The percentage distribution of transactions between boroughs has remained relatively consistent between 2023 and 2024, with Queens, Brooklyn and Manhattan typically taking up about 80% of transaction volume.
-
-![trans_vol_23](https://github.com/user-attachments/assets/efd07809-8348-449b-9dd3-2133c1ebbd3f)
-![trans_vol_24](https://github.com/user-attachments/assets/11171ccc-e2d3-467b-badc-101f3124c77d)
-
 - Overall transactions seem to trend upwards during the summer months (from May to September) between both years with fewer transactions in winter (to December to March); although this will need to be verified with another year as there were no recorded transactions from Jan-Feb 2024 in the provided dataset
 ![stacked_trans_23](https://github.com/user-attachments/assets/bb295c62-c462-46c5-81a6-f800241107eb)
 ![stacked_trans_24](https://github.com/user-attachments/assets/fe378ea3-0904-41c6-bebc-e11d8b0138c3)
