@@ -1,5 +1,5 @@
 # NYC Property Sales EDA 
-Exploratory Data Analysis of rolling property sales data in NYC from March 2024-2025
+Exploratory Data Analysis and Visualisation of rolling property sales data in NYC from 2023 to 2024.
 
 ## About 
 The New York City Department of Finance maintains detailed public records of sales information for properties sold within NYC on an annualized basis since 2003, where detailed transaction metrices such as location, sale price, building class types and floor area are listed. 
@@ -12,42 +12,51 @@ The objective of this project is to analyze and answer the following questions:
 - What are the trends in transacted property types and their median price?
 - What are the most and least expensive neighborhoods for property buying in NYC?
 
-For the purposes of data exploration, only data from a 24-month period of (2023-2024) will be used, with the final findings deployed via a streamlit app. 
+For the purposes of this repository data from a 24-month period of (2023-2024) will be used with findings published within a Jupyter notebook.  
 
 ## Steps and Deployment 
 - Data importation and cleaning (Jupyter Notebook in VS Code, [Data Wrangler](https://code.visualstudio.com/docs/datascience/data-wrangler))
-- Univariate Analysis and Data Visualisation (Plotly Express)
-- Deployment on Streamlit (Python Script)
+- Analysis and Data Visualisation (Plotly Express)
 
 ### Data importation and cleaning (Jupyter Notebook)
 *This section provides an overview on the key steps undertaken to clean and import the data. For detailed steps, refer to 'NYC_Property_Notebook.ipynb'*
 
 The workflow diagram the key criteria and processes undertaken to allow for initial key findings for the provided data. As the DOF provides the yearly data seperated by boroughs, a data processing function was created to allow for data preparation at scale for past years. 
+
 ![NYC_Property drawio](https://github.com/user-attachments/assets/7f207283-ef0d-4196-8b16-ce68871585a1)
 
+An aspect of the data provided also necessicated the record removal of what is known as a '$0 sale price', or nominal/token sale prices - indicating transfer of property ownership with no cash consideration. Datapoints with very high sale prices known to be outlier (determined to be in excess of USD $2million) were left as-is, owing to the existence of such properties, typically within Manhatten. The final dataset for the period of 2 years contains approximately 92,400 records.
+
+![scatter](https://github.com/user-attachments/assets/16e503fe-bfeb-4381-8e5c-4a2e76e5dab6)
+
 ## Key Findings 
-- The percentage distribution of transactions between boroughs has remained relatively consistent between 2023 and 2024, with Queens, Brooklyn and Manhattan typically taking up about 80% of transactions. 
-![pie_chart_1](https://github.com/user-attachments/assets/721f42fc-c762-48c6-aab3-92f2e6e3a598)
-![pie_chart_2](https://github.com/user-attachments/assets/640130a1-a185-4ce5-9865-95e1c1a68b5b)
+- The percentage distribution of transactions between boroughs has remained relatively consistent between 2023 and 2024, with Queens, Brooklyn and Manhattan typically taking up about 80% of transaction volume.
+
+![trans_vol_23](https://github.com/user-attachments/assets/efd07809-8348-449b-9dd3-2133c1ebbd3f)
+![trans_vol_24](https://github.com/user-attachments/assets/11171ccc-e2d3-467b-badc-101f3124c77d)
 
 - Overall transactions seem to trend upwards during the summer months (from May to September) between both years with fewer transactions in winter (to December to March); although this will need to be verified with another year as there were no recorded transactions from Jan-Feb 2024 in the provided dataset
-![stacked_1](https://github.com/user-attachments/assets/7ae21d03-9f15-46c7-8c46-ffb469994b43)
-![stacked_2](https://github.com/user-attachments/assets/b034869c-badd-4e3b-b1d4-6b2f70e6a542)
+![stacked_trans_23](https://github.com/user-attachments/assets/bb295c62-c462-46c5-81a6-f800241107eb)
+![stacked_trans_24](https://github.com/user-attachments/assets/fe378ea3-0904-41c6-bebc-e11d8b0138c3)
 
-- The most popular neighborhoods for residential transactions are that of Flushing-North (Queens), Upper East Side (Manhattan) and Upper West Side (Manhattan). Overall, the boroughs of Manhattan and Queens were the most popular 
-![neighborhood_1](https://github.com/user-attachments/assets/35fca86b-e24c-49d8-98fe-6b75bfc47dbf)
-![neighborood_2](https://github.com/user-attachments/assets/25e14a9c-cfb3-4857-9296-49b3398b6ea1)
+- The most popular neighborhoods for residential transactions are that of Flushing-North (Queens), Upper East Side (Manhattan) and Upper West Side (Manhattan), remaining consistent throughout both years. Overall, the boroughs of Manhattan and Queens were the most popular.
+![top_10_23](https://github.com/user-attachments/assets/244bfcda-a8d1-4de4-88c4-02265452744d)
+![top_10_24](https://github.com/user-attachments/assets/ceb065af-0109-4c01-b61a-15441b0f5e1e)
+
+In terms of building types, Elevator Apartments (Coop and Condos), as well as One and Two Family dwellings were the most commonly transacted type of properties. Owing to the range of properties and sale prices within NYC, only transactions below USD $5 were considered. 
+
+![building_23](https://github.com/user-attachments/assets/260e547d-b1ae-444c-b82a-f6df402e1347)
+![building_24](https://github.com/user-attachments/assets/18c8c66d-6868-4f78-9b24-7448d02d7b66)
 
 ## Further Actions 
-The EDA steps above allowed for an initial statistical analysis of the provided data to detect categorical trends that can be further explored in detail, particularly in residential dwellings and apartments. 
+The EDA steps above allowed for an initial exploration and analysis of the dataset to provide transactional trends that can be further explored in detail, particularly in residential dwellings and apartments. 
 
-It also showed via scatterplot a detection of transaction outliers not captured in the data preparation phase, which will have to be addressed before further analysis and feature engineering, potentially leading to linear regression to predict transaction prices for future years. 
+It also showed via scatterplot a detection of transaction outliers not captured in the data preparation phase. For more detailed analysis, or potential use in Machine Learning models outlier treatment will have to be determined. 
 
-The dataset also contains records containing detailed location elements (Neighborhood, Address, ZIP code), which is in line with the Neighborhood Tabulation Areas (NTAs) as defined by the [NYC Department of City Planning](https://www.nyc.gov/content/planning/pages/resources/datasets/neighborhood-tabulation). 
+The dataset also contains records containing detailed location elements (Neighborhood, Address, ZIP code), which is in line with the Neighborhood Tabulation Areas (NTAs) as defined by the [NYC Department of City Planning](https://www.nyc.gov/content/planning/pages/resources/datasets/neighborhood-tabulation). Data tranformation to incoprate this the NTA will also allow for deatiled analysis in terms of dimensionality, particularly in the geospatial aspect. 
 
 ![NYC_NTA](https://github.com/user-attachments/assets/ecd17000-5d48-4f49-9f82-4f9d84e5066b)
 
 *2020 NTA, Geopandas/GeoJSON*
 
-Future processes for geocoding of transactions to spatial datasets provided may also help to add another dimensionality to the above analysis. 
 
