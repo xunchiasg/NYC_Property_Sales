@@ -30,9 +30,10 @@ An aspect of the data provided also necessicated the record removal of what is k
 ![scatter](https://github.com/user-attachments/assets/16e503fe-bfeb-4381-8e5c-4a2e76e5dab6)
 
 ## Key Findings 
-- The percentage distribution of transactions between boroughs has remained relatively consistent between 2023 and 2024, with Queens, Brooklyn and Manhattan typically taking up about 80% of transactions. 
-![pie_chart_2](https://github.com/user-attachments/assets/e9279e55-3aa5-44a7-8bc4-3a4ec306c50b)
-![pie_chart_1](https://github.com/user-attachments/assets/f62291b3-0155-411b-ad34-7c4c65b22496)
+- The percentage distribution of transactions between boroughs has remained relatively consistent between 2023 and 2024, with Queens, Brooklyn and Manhattan typically taking up about 80% of transaction volume.
+
+![trans_vol_23](https://github.com/user-attachments/assets/efd07809-8348-449b-9dd3-2133c1ebbd3f)
+![trans_vol_24](https://github.com/user-attachments/assets/11171ccc-e2d3-467b-badc-101f3124c77d)
 
 - Overall transactions seem to trend upwards during the summer months (from May to September) between both years with fewer transactions in winter (to December to March); as there are no recorded transactions from Jan-Feb 2024 previous years will need to be implemented to verify this trend.
 ![stacked_1](https://github.com/user-attachments/assets/c34cf48c-d3cc-4784-aed7-16d56fa45e61)
@@ -65,5 +66,7 @@ The dataset also contains records containing detailed location elements (Neighbo
 ![NYC_NTA](https://github.com/user-attachments/assets/ecd17000-5d48-4f49-9f82-4f9d84e5066b)
 
 *2020 NTA, Geopandas/GeoJSON*
+
+*(Updated 28th May 2025)*
 
 
