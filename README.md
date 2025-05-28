@@ -30,7 +30,6 @@ An aspect of the data provided also necessicated the record removal of what is k
 ![scatter](https://github.com/user-attachments/assets/16e503fe-bfeb-4381-8e5c-4a2e76e5dab6)
 
 ## Key Findings 
-<<<<<<< HEAD
 - The percentage distribution of transactions between boroughs has remained relatively consistent between 2023 and 2024, with Queens, Brooklyn and Manhattan typically taking up about 80% of transactions. 
 ![pie_chart_2](https://github.com/user-attachments/assets/e9279e55-3aa5-44a7-8bc4-3a4ec306c50b)
 ![pie_chart_1](https://github.com/user-attachments/assets/f62291b3-0155-411b-ad34-7c4c65b22496)
@@ -60,7 +59,6 @@ In terms of building types, Elevator Apartments (Coop and Condos), as well as On
 
 ![building_23](https://github.com/user-attachments/assets/260e547d-b1ae-444c-b82a-f6df402e1347)
 ![building_24](https://github.com/user-attachments/assets/18c8c66d-6868-4f78-9b24-7448d02d7b66)
->>>>>>> branch_4
 
 ## Further Actions 
 The EDA steps above allowed for an initial exploration and analysis of the dataset to provide transactional trends that can be further explored in detail, particularly in residential dwellings and apartments. 
