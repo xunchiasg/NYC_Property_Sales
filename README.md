@@ -41,7 +41,7 @@ An aspect of the data provided also necessicated the record removal of what is k
 - The most popular neighborhoods for residential transactions are that of Flushing-North (Queens), Upper East Side (Manhattan) and Upper West Side (Manhattan). Overall, the boroughs of Manhattan and Queens were the most popular 
 ![neighborhood_1](https://github.com/user-attachments/assets/bb0b0136-54e6-4e16-a904-af4dd6c22178)
 ![neighborood_2](https://github.com/user-attachments/assets/fcac198c-8ea8-47f7-9ff4-761fe1def57f)
-=======
+
 - The percentage distribution of transactions between boroughs has remained relatively consistent between 2023 and 2024, with Queens, Brooklyn and Manhattan typically taking up about 80% of transaction volume.
 
 ![trans_vol_23](https://github.com/user-attachments/assets/efd07809-8348-449b-9dd3-2133c1ebbd3f)
@@ -63,7 +63,7 @@ In terms of building types, Elevator Apartments (Coop and Condos), as well as On
 ## Further Actions 
 The EDA steps above allowed for an initial exploration and analysis of the dataset to provide transactional trends that can be further explored in detail, particularly in residential dwellings and apartments. 
 
-It also showed via scatterplot a detection of transaction outliers not captured in the data preparation phase. For more detailed analysis, or potential use in Machine Learning models outlier treatment will have to be determined. 
+It also showed via scatterplot a detection of transaction outliers not captured in the data preparation phase. For more detailed analysis towards potential use in Machine Learning models outlier treatment will have to be determined. 
 
 The dataset also contains records containing detailed location elements (Neighborhood, Address, ZIP code), which is in line with the Neighborhood Tabulation Areas (NTAs) as defined by the [NYC Department of City Planning](https://www.nyc.gov/content/planning/pages/resources/datasets/neighborhood-tabulation). Data tranformation to incoprate this the NTA will also allow for deatiled analysis in terms of dimensionality, particularly in the geospatial aspect. 
 
